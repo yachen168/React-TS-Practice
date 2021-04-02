@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false, // 不需顯示聲明變量類型 Any
+    "target": "es5", // 編譯後 JS 版本
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true, // 允許混合編譯 JS 文件
+    "skipLibCheck": true,
+    "esModuleInterop": true, // 允許使用 CommonJS 的方式 import 檔案
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true, // 編譯器會將每個檔案作為單獨模塊
+    "noEmit": true, // 當編譯錯誤時，編譯器不要生成 JS 代碼
+    "jsx": "react-jsx" // 允許編譯器支持編譯 React 程式碼
+  },
+  "include": ["src"]
+}
